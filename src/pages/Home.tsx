@@ -156,8 +156,7 @@ const Home = (): JSX.Element => {
       <FancyBackground />
       <UserInputMain onSubmit={formSubmitEvent}>
         <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
-          <img width="64" src="/web-check.png" alt="Web Check Icon" />
-          Web Check
+          Name
         </Heading>
         <Input
           id="user-input"
@@ -181,19 +180,8 @@ const Home = (): JSX.Element => {
             <li><a href="/about">+ more!</a></li>
           </ul>
         </div>
-        <div className="links">
-          <a href="https://github.com/lissy93/web-check" title="Check out the source code and documentation on GitHub, and get support or contribute">
-            <Button>View on GitHub</Button>
-          </a>
-          <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="Deploy your own private or public instance of Web-Check to Netlify">
-            <Button>Deploy your own</Button>
-          </a>
-          <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
-            <Button>API Docs</Button>
-          </a>
-        </div>
+  
       </SiteFeaturesWrapper>
-      <Footer isFixed={true} />
     </HomeContainer>
   );
 }
